@@ -19,6 +19,7 @@ export class NewTaskComponent {
     this.onSubmitNewTask = new EventEmitter();
   }
   addTask(userDescription: HTMLInputElement){
+    // console.log(userDescription.value);
     this.onSubmitNewTask.emit(userDescription.value);
     userDescription.value = "";
   }
